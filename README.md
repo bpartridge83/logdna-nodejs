@@ -32,7 +32,7 @@ var options = {
     mac: macAddress,
     app: appName
 };
-var logger = Logger.createLogger(apikey, options);
+var logger = Logger.create(apikey, options);
 ```
 _**Required**_ - *(String)* - max length 32 chars
 * [LogDNA API Key](https://app.logdna.com/manage/profile) 
@@ -69,7 +69,7 @@ logger.trace('My Sample Log Line', { app: 'myAppName'});
 
 ## API
 
-### createLogger(key, [options])
+### create(key, [options])
 
 #### key
 
